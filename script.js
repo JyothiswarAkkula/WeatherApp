@@ -12,7 +12,7 @@ let clockInterval;
 form.addEventListener("submit", searchForLocation);
 
 const fetchResults = async (target) => {
-  let url = `http://api.weatherapi.com/v1/current.json?key=d8ffb20ba11e41919d872829251905&q=${target}&aqi=no`;
+  let url = `https://api.weatherapi.com/v1/current.json?key=d8ffb20ba11e41919d872829251905&q=${target}&aqi=no`;
 
   try {
     let res = await fetch(url);
